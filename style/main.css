@@ -8,11 +8,11 @@ body {
     background-size: 100% 100%;
     background-color: brown;
 }
-
+/* CECI EST UN COMMENTAIRE */
 nav  a {
     text-decoration: none;
     font-size: 200%;
-    color: red;
+    color: mediumvioletred; /* COLOR RED */
     display: inline-block;
     text-align: right;
     width: 25%;
