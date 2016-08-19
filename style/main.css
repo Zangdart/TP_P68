@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-size: 100% 100%;
+    background-color: brown;
+}
+
+nav  a {
+    text-decoration: none;
+    font-size: 200%;
+    color: red;
+    display: inline-block;
+    text-align: right;
+    width: 25%;
+    height: 25%;
+    background-color: aqua;
+    box-sizing: border-box;
+}
+
+nav  a:hover {
+    color: mediumpurple;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+img {
+    width: 100%;
+    max-height: 500px;
+}
+
+footer a  {
+    text-align: center
+}
+
+form#content fieldset ul li {
+    list-style-type: none ;
+}
