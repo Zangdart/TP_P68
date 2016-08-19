@@ -1,45 +1,52 @@
-* {
+* {         /*TOUCHE TOUT LE DOCUMENT=RESET*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    background-size: 100% 100%;
-    background-color: brown;
-}
-/* CECI EST UN COMMENTAIRE */
-nav  a {
-    text-decoration: none;
-    font-size: 200%;
-    color: mediumvioletred; /* COLOR RED */
-    display: inline-block;
-    text-align: right;
-    width: 25%;
-    height: 25%;
-    background-color: aqua;
-    box-sizing: border-box;
-}
-
-nav  a:hover {
-    color: mediumpurple;
-}
-
 #wrapper {
     margin: 0 auto;
     width: 80%;
-
 }
-
-img {
-    width: 100%;
-    max-height: 500px;
+nav  a {
+    text-decoration: none;
+    font-size: 100%;
+    color: mediumvioletred;
+    display: inline-block;              /*CECI EST LE MENU*/
+    width: 10%;
+    box-sizing: border-box;
+    float: right;
+    position: relative;
+    bottom: 100px;
+    border-bottom: 2px solid lightgrey ;
 }
-
+nav  a:hover {
+    color: mediumpurple;
+}
+header img {
+    display: inline-block;
+    border-radius: 150%;
+    opacity: 0.7;
+}
+header p {
+    display: inline-block;
+    vertical-align: 80px;
+    font-size: 300%;
+    position: relative;
+    right:235px;
+    color:darkred;
+}
 footer a  {
     text-align: center
 }
 
-form#content fieldset ul li {
-    list-style-type: none ;
+/*----------------------------- NE PAS TOUCHER LA PARTIE COMMUNE AU DESSUS ------------------------------------------ */
+
+#main img {
+    width: 100%;        /*MON IMAGE*/
+    max-height: 500px;
 }
+
+form#content fieldset ul li {
+    list-style-type: none ;         /* POUR MON FORMULAIRE*/
+}
+/*----------------------------- NE PAS TOUCHER :PARTIE A DAVE ! ----------------------------------------------------- */
