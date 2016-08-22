@@ -55,11 +55,11 @@ footer  {
 }
 
 /*----------------------------- NE PAS TOUCHER LA PARTIE COMMUNE AU DESSUS ------------0k------------------------------ */
-
 #main img {
     width: 100%;        /*MON IMAGE*/
     max-height: 500px;
 }
+
 /*----------------------------------*POUR MON FORMULAIRE*---------------------------------------------------------- */
 fieldset {
     text-align: center;
@@ -75,7 +75,7 @@ form p, form h2, fieldset ul li {
     text-align: center;     /* BOUTON SUBMIT*/
     margin-top: 20px;
 }
-<<<<<<< HEAD
+
 #soumettre {
 padding: 20px;
 border-radius: 90px;
@@ -90,10 +90,6 @@ label.long {
 }
 
 /*----------------------------- NE PAS TOUCHER :PARTIE A DAVE ! ----------------------------------------------------- */
-=======
-/*----------------------------- NE PAS TOUCHER :PARTIE A DAVE ! ------------------ok----------------------------------- */
-/*-----dervys-----*/
-
 #dc_wrapper {
     margin: 0 auto;
     width: 80%;
@@ -163,7 +159,7 @@ p {
 }
 
 
-                                   /*----------section droit--------*/
+/*----------section droit--------*/
 div.dc_droit {
     display: inline-block;
     width: 50%;
@@ -189,4 +185,3 @@ div.dc_droit>section>div>figcaption>p {
     width: 100%;
 
 }
->>>>>>> fd82ca5f92589c1c449639c29577b0d4839e3fc9
