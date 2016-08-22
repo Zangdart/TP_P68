@@ -1,19 +1,11 @@
+@import 'https://fonts.googleapis.com/css?family=Lobster';
+@import 'https://fonts.googleapis.com/css?family=Lobster|Pacifico';
+
 * {         /*TOUCHE TOUT LE DOCUMENT=RESET*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-@font-face {
-    font-family: 'Pacifico';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Pacifico'), url('polices/Pacifico.ttf') format('ttf');
-}
-
-
-
-
 #wrapper {
     margin: 0 auto;
     width: 80%;
@@ -34,6 +26,7 @@ nav  a {
     box-sizing: border-box;
     border-bottom: 2px solid lightgrey ;
     text-align: center;
+
 }
 a.active {
     color: purple;
@@ -53,7 +46,6 @@ header img {
     opacity: 0.7;
 }
 header p {
-    font-family: 'Pacifico', cursive;
     display: inline-block;
     vertical-align: 80px;
     font-size: 300%;
@@ -62,42 +54,13 @@ header p {
     color:darkred;
 }
 footer  {
-    text-align: center;
-}
-footer p {
-    font-family: 'Pacifico', cursive;
-    border-top: 2px solid lightgrey;        /*P DU TRADEMARK*/
-    width: 100%;
-    margin-top: 50px;
+    text-align: center
 }
 
 /*----------------------------- NE PAS TOUCHER LA PARTIE COMMUNE AU DESSUS ------------0k------------------------------ */
 #main img {
     width: 100%;        /*MON IMAGE*/
-    max-height: 496px;
-}
-
-.trois div {
-    display: inline-block;
-    width: 32%;                 /*POUR MES 3 BLOCS FORFAITS.*/
-    height: 400px;
-    margin:7px;
-    background-color: #d4b051;
-    overflow: hidden;
-    /*box-sizing: border-box;*/
-
-}
-div.trois h3 {
-    font-family: 'Pacifico', cursive;
-    color:darkred;
-    text-align: center;
-}
-div.trois p {
-    font-family: 'Pacifico', cursive;
-    text-align: justify;
-    line-height: 20px;
-    width: 90%;
-    padding-left: 10%;
+    max-height: 500px;
 }
 
 /*----------------------------------*POUR MON FORMULAIRE*---------------------------------------------------------- */
@@ -125,105 +88,94 @@ width: 250px;
 }
 
 label.long {
-    width: 10%;          /* POUR ESPACEMENT ENTRE NOM ET CASE*/
+    width: 5%;          /* POUR ESPACEMENT ENTRE NOM ET CASE*/
     display: inline-block;
 }
 
 /*----------------------------- NE PAS TOUCHER :PARTIE A DAVE ! ----------------------------------------------------- */
-#dc_wrapper {
+#forfait_wrapper {
     margin: 0 auto;
     width: 80%;
+    background-color:white;
     color: maroon;
-
 }
-#dc_wrapper section.dc_menu,div.dc_prix {   /*----section gauche---*/
+#forfait_wrapper>h1>h2>ul>table {
+    color: maroon;
+}
+#forfait_wrapper section,div.dc_prix {   /*----section gauche---*/
     display: inline-block;
     width: 45%;
     min-height:75px;
     margin-top:10px;
-    margin-right:5%;
-    background-color:maroon;
-}
+   }
 
-h1{
-    font-size:25px ;
-    color: maroon;
+#forfait_wrapper h1,h2 {
+
     text-decoration: underline;
-    background-color: white;
+    margin-top: 10px;
     padding: 10px 0;
 }
-/*ul,li {*/
-    /*color: white;*/
-    /*font-size:20px;*/
-    /*text-decoration: underline;*/
-/*}*/
-h2 {
-    margin-top: 10px;
-    font-size: 20px;
-    color: maroon;
-    text-decoration: underline;
+#forfait_wrapper ul>li {
+
+    font-size:30px;
 }
-ul.choix_1  li, ul.choix_2 li,ul.choix_3 li {
+#forfait_wrapper ul.choix>li {
     margin-left: 30px;
-    list-style-type: disc;
     font-size: 20px;
+    list-style-type: disc;
 }
-table{
+#forfait_wrapper table{
     margin: 10px auto;
     width: 100%;
     height: 150px;
-
 }
 
-table, th, tr, td {
+#forfait_wrapper table,th,tr,td {
     border:4px solid #d4b051;
     border-collapse: collapse;
-    color: #ffffff;
+    padding: 0 20px;
 }
-tr:nth-of-type(1) {
+#forfait_wrapper td:nth-last-of-type(1) {
+    text-align: center;
+}
+#forfait_wrapper tr:nth-of-type(1) {
     background-color:maroon ;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
 }
 
-tr:nth-child(4) {
+#forfait_wrapper tr:nth-child(4) {
     background-color: #d7daa4;
     text-decoration: underline;
 }
-p {
+#forfait_wrapper p:nth-last-of-type(2),em {
     display: inline-block;
-    width: 45%;
-    min-height:75px;
-    margin-top:10px;
-    margin-right:5%;
+    margin: 10px 0;
+    font-family: 'Pacifico', cursive;
+    font-style: oblique;
 }
+
 
 /*---------------------------------------section droit---------------------------------------------------------*/
 
-section#dc_droit {
+#forfait_wrapper aside{
     display: inline-block;
-    width: 50%;
+    margin-top: 10px; width: 55%;
     float: right;
-    background-color: aquamarine;
-    margin-top: 10px;
-}
-div.dc_droit {
 
-
+    background-color: white;
 
 }
-div.dc_droit>div {
-    display: inline-block;
-    width:45%;
-    height: 300px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-
+#forfait_wrapper img {
+    width: 300px;
+    height: 190px;
 }
-div.dc_droit>section>div>img{
-    width: 255px;
-    height: 195px;
-}
-div.dc_droit>section>div>figcaption>p {
-    width: 100%;
 
+#forfait_wrapper figure {
+    display:inline-block;
+    width: 45%;
+    padding: 10px;
 }
