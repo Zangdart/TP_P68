@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Lobster';
+/*@import 'https://fonts.googleapis.com/css?family=Lobster';*/ /*P/E EN TROP ?*/
 @import 'https://fonts.googleapis.com/css?family=Lobster|Pacifico';
 
 * {         /*TOUCHE TOUT LE DOCUMENT=RESET*/
@@ -46,6 +46,7 @@ header img {
     opacity: 0.7;
 }
 header p {
+    font-family: 'Pacifico', cursive;
     display: inline-block;
     vertical-align: 80px;
     font-size: 300%;
@@ -56,22 +57,53 @@ header p {
 footer  {
     text-align: center
 }
-
+footer p {
+    font-family: 'Pacifico', cursive;
+    width:100%;
+    border-top: 2px solid lightgrey;
+    margin-top: 50px;
+    font-size: 20px;
+}
 /*----------------------------- NE PAS TOUCHER LA PARTIE COMMUNE AU DESSUS ------------0k------------------------------ */
 #main img {
     width: 100%;        /*MON IMAGE*/
     max-height: 500px;
 }
+.trois div {
+    font-family: 'Pacifico', cursive;
+    display: inline-block;
+    width: 32%;                 /*POUR MES 3 BLOCS FORFAITS.*/
+    height: 400px;
+    margin: 7px;
+    background-color: #d4b051;
+    overflow: hidden;
+    border-radius: 10%;
+}
+.trois h3 {
+    text-align: center;
+    color:maroon;
+    font-size: 20px;
+}
+.trois p {
+    text-align: justify;
+    line-height: 20px;
+    padding:10px;
+}
 
 /*----------------------------------*POUR MON FORMULAIRE*---------------------------------------------------------- */
 fieldset {
     text-align: center;
+    border:4px solid #d4b051;
+    background-color: #d7daa4;
+    color: maroon;
+
 }
 form#content fieldset ul li {
     list-style-type: none ;
 }
 form p, form h2, fieldset ul li {
     padding: 10px;
+
 
 }
 .sub {
@@ -88,8 +120,18 @@ width: 250px;
 }
 
 label.long {
-    width: 5%;          /* POUR ESPACEMENT ENTRE NOM ET CASE*/
+    width: 10%;          /* POUR ESPACEMENT ENTRE NOM ET CASE*/
     display: inline-block;
+}
+
+form h2 {
+    text-decoration: none;
+    /*font-family: 'Pacifico', cursive;*/
+    color: maroon;
+}
+form p {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
 }
 
 /*----------------------------- NE PAS TOUCHER :PARTIE A DAVE ! ----------------------------------------------------- */
