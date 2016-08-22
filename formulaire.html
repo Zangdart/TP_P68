@@ -6,43 +6,54 @@
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
-
-<header>
-    <nav id="menu_principal" >
-        <span><a href="index.html">Accueil</a></span><!--
-     --><span><a href="#">Menu</a></span><!--
-     --><span><a href="#">A Propos</a></span><!--
-     --><span><a href="formulaire.html">Contact</a></span>
-    </nav>
-
-</header>
-
 <div id="wrapper">
+    <header>
+        <img src="images/téléchargement.jpg"/>
+        <p>McCabane</p>
+        <nav id="menu_principal" >
+
+
+            <a href="index.html">Accueil</a><!--
+     --><a href="forfait.html">Menu</a><!--
+     --><a href="#">A Propos</a><!--
+     --><a href="formulaire.html" class="active">Contact</a>
+
+        </nav>
+    </header>
+
+
 
     <form id="content" action="">
         <h2>Le JEU du Formulaire !</h2>
+        <p>
+            C'est maintenant l'heure de l'épreuve du formulaire ! Remplissez le sans erreurs tel qu'indiqué, et pour notre grand tirage vous serez qualifié! Pour participer, c'est simple, suivez les indications dans les cases et vous vous meriterez peut  être un de nos forfaits gourmand croquant GRATUITEMENT ! Bonne chance !
+        </p>
         <fieldset id="identite">
             <legend>Vous êtes:</legend>
             <ul>
                 <li>
-                    <label for="nom">Nom</label>
+                    <label class="long" for="nom">Nom</label>
                     <input type="text" id="nom" placeholder="nom" required="required" pattern="[A-Za-z]{2,}" autofocus />
                 </li>
                 <li>
-                    <label for="prenom">Prénom</label>
+                    <label class="long" for="prenom">Prénom</label>
                     <input type="text" id="prenom" placeholder="prenom"  required="required" pattern="[A-Za-z]{2,}" />
                 </li>
                 <li>
-                    <label for="telephone">Téléphone</label>
+                    <label class="long" for="telephone">Téléphone</label>
                     <input type="tel" id="telephone" pattern="^\(?\d{3}\)?(-|)?\d{3}(-| )?\d{2}(-|)?\d{2}" placeholder="(xxx)-xxx-xxxx"  required="required" />
                 </li>
                 <li>
-                    <label for="email">Email</label>
+                    <label class="long" for="email">Email</label>
                     <input type="email" id="email" placeholder="Email" required="required" />
                 </li>
                 <li>
+                    <label class="long" for="adr">Adresse</label>
+                    <input type="text" id="adr" placeholder="Adresse" required="required" pattern="{2,}"  />
+                </li>
+                <li>
                     Votre Pays d'origine: <br>
-                    <input list="pays" name="pays">
+                    <input list="pays" name="pays" required="required">
                     <datalist id="pays">
                         <option value="Canada">Canada</option>
                         <option value="France">France</option>
@@ -52,25 +63,25 @@
                 </li>
                 <li>
                     Nourriture préférée: <br>
-                    <input list="bouffe" name="nourriture">
+                    <input list="bouffe" name="nourriture" required="required">
                     <datalist id="bouffe">
-                        <option value="pout">Poutine a l'erable</option>
-                        <option value="pc">Sirop d'erable a la Pancake</option>
-                        <option value="alcool">Hydromel saveur erable</option>
-                        <option value="tire">Tire a l'erable</option>
+                        <option value="Poutine a l'erable"></option>
+                        <option value="Sirop d'erable a la Pancake"></option>
+                        <option value="Hydromel saveur erable"></option>
+                        <option value="Tire a l'erable"></option>
                     </datalist>
                 </li>
 
 
                 <li>
                     Sexe:<br>
-                    <input type="radio" name="gender" value="male" checked> Male<br>
-                    <input type="radio" name="gender" value="female"> Female<br>
+                    <input type="radio" name="gender" value="male" > Homme<br>
+                    <input type="radio" name="gender" value="female">Femme<br>
                     <input type="radio" name="gender" value="other"> Autre
                 </li>
                 <li>
-                    <label for="autorisation">Cochez pour vous inscrire a l'infolettre </label>
                     <input type="checkbox" id="autorisation" />
+                    <label for="autorisation">Cochez pour vous inscrire a l'infolettre ! </label>
                 </li>
             </ul>
 
@@ -78,16 +89,15 @@
         </fieldset>
 
 
-
-        <input type="submit" value="Soumettre" />
-
+        <div class="sub">
+        <input type="submit" value="Soumettre" id="soumettre" />
+        </div>
     </form>
 
-    <footer>
-        <a href="#menu_principal"><span>Retour en haut de page</span></a>
-    </footer>
 
 </div>
-
+<footer>
+    <a href="#wrapper"><img src="images/hdp1.jpg"/></a>
+</footer>
 </body>
 </html>
