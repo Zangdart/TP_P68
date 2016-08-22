@@ -7,20 +7,35 @@
     margin: 0 auto;
     width: 80%;
 }
+
+nav {
+    text-align: right;      /*POUR METTRE LE MENU A DROITE*/
+    position: relative;
+    bottom: 90px;
+}
+
 nav  a {
     text-decoration: none;
-    font-size: 100%;
+    font-size: 125%;
     color: mediumvioletred;
     display: inline-block;              /*CECI EST LE MENU*/
     width: 10%;
     box-sizing: border-box;
-    float: right;
-    position: relative;
-    bottom: 100px;
     border-bottom: 2px solid lightgrey ;
+    text-align: center;
+
 }
+a.active {
+    color: purple;
+    border-bottom: 2px solid firebrick ;
+
+}
+
 nav  a:hover {
     color: mediumpurple;
+}
+header {
+    margin-top: 20px;
 }
 header img {
     display: inline-block;
@@ -35,7 +50,7 @@ header p {
     right:235px;
     color:darkred;
 }
-footer a  {
+footer  {
     text-align: center
 }
 
@@ -45,10 +60,37 @@ footer a  {
     width: 100%;        /*MON IMAGE*/
     max-height: 500px;
 }
-
-form#content fieldset ul li {
-    list-style-type: none ;         /* POUR MON FORMULAIRE*/
+/*----------------------------------*POUR MON FORMULAIRE*---------------------------------------------------------- */
+fieldset {
+    text-align: center;
 }
+form#content fieldset ul li {
+    list-style-type: none ;
+}
+form p, form h2, fieldset ul li {
+    padding: 10px;
+
+}
+.sub {
+    text-align: center;     /* BOUTON SUBMIT*/
+    margin-top: 20px;
+}
+<<<<<<< HEAD
+#soumettre {
+padding: 20px;
+border-radius: 90px;
+margin-top: 20px;
+background-color: white;
+width: 250px;
+}
+
+label.long {
+    width: 5%;          /* POUR ESPACEMENT ENTRE NOM ET CASE*/
+    display: inline-block;
+}
+
+/*----------------------------- NE PAS TOUCHER :PARTIE A DAVE ! ----------------------------------------------------- */
+=======
 /*----------------------------- NE PAS TOUCHER :PARTIE A DAVE ! ------------------ok----------------------------------- */
 /*-----dervys-----*/
 
@@ -147,3 +189,4 @@ div.dc_droit>section>div>figcaption>p {
     width: 100%;
 
 }
+>>>>>>> fd82ca5f92589c1c449639c29577b0d4839e3fc9
