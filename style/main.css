@@ -52,58 +52,83 @@ form#content fieldset ul li {
 /*----------------------------- NE PAS TOUCHER :PARTIE A DAVE ! ------------------ok----------------------------------- */
 /*-----dervys-----*/
 
-section.dc_menu, section.dc_prix,p,table{
-
-    margin-left: 25px;
-    margin-right: 25px;
-    width: 30%;
-
-
+#dc_wrapper {
+    margin: 0 auto;
+    width: 80%;
 }
-div.dc_prix {
+#dc_wrapper section.dc_menu,div.dc_prix {   /*----section gauche---*/
     display: inline-block;
-    width: 30%;
+    width: 45%;
+    min-height:75px;
+    margin-top:10px;
+    margin-right:5%;
+    background-color:maroon;
+}
+aside {
+    display: inline-block;
+    width: 45%;
+    margin-top:10px;
 
 }
-
-ul,li,h2{
-    font-size:20px ;
+h1{
+    font-size:25px ;
     color: maroon;
+    text-decoration: underline;
+    background-color: white;
+    padding: 10px 0;
+}
+ul,li {
+    color: white;
+    font-size:20px;
 }
 h2 {
-
+    margin-top: 10px;
+    font-size: 20px;
+    color: maroon;
+    text-decoration: underline;
 }
 ul.choix_1  li, ul.choix_2 li,ul.choix_3 li {
     margin-left: 30px;
     list-style-type: disc;
     font-size: 20px;
 }
-
 table{
-    margin: 10px 25px;
-    width: 30%
+    margin: 10px auto;
+    width: 100%;
+    height: 150px;
 
 }
 
 table, th, tr, td {
     border:4px solid #d4b051;
     border-collapse: collapse;
+    color: #ffffff;
 }
 tr:nth-of-type(1) {
     background-color:maroon ;
-    color: #ffffff;
 }
 
 tr:nth-child(4) {
     background-color: #d7daa4;
+    text-decoration: underline;
 }
-                                    /*----------section droit--------*/
-
-div.dc_droit>section {
+p {
     display: inline-block;
-    width: 60%;
-    background-color: aquamarine;
+    width: 45%;
+    min-height:75px;
+    margin-top:10px;
+    margin-right:5%;
+}
+
+
+                                   /*----------section droit--------*/
+div.dc_droit {
+    display: inline-block;
+    width: 50%;
     float: right;
+    background-color: aquamarine;
+
+
 }
 div.dc_droit>section>div {
     display: inline-block;
@@ -111,6 +136,7 @@ div.dc_droit>section>div {
     height: 300px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 10px;
 
 }
 div.dc_droit>section>div>img{
