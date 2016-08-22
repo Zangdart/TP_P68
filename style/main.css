@@ -3,6 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico'), url('polices/Pacifico.ttf') format('ttf');
+}
+
+
+
+
 #wrapper {
     margin: 0 auto;
     width: 80%;
@@ -23,7 +34,6 @@ nav  a {
     box-sizing: border-box;
     border-bottom: 2px solid lightgrey ;
     text-align: center;
-
 }
 a.active {
     color: purple;
@@ -43,6 +53,7 @@ header img {
     opacity: 0.7;
 }
 header p {
+    font-family: 'Pacifico', cursive;
     display: inline-block;
     vertical-align: 80px;
     font-size: 300%;
@@ -51,13 +62,42 @@ header p {
     color:darkred;
 }
 footer  {
-    text-align: center
+    text-align: center;
+}
+footer p {
+    font-family: 'Pacifico', cursive;
+    border-top: 2px solid lightgrey;        /*P DU TRADEMARK*/
+    width: 100%;
+    margin-top: 50px;
 }
 
 /*----------------------------- NE PAS TOUCHER LA PARTIE COMMUNE AU DESSUS ------------0k------------------------------ */
 #main img {
     width: 100%;        /*MON IMAGE*/
-    max-height: 500px;
+    max-height: 496px;
+}
+
+.trois div {
+    display: inline-block;
+    width: 32%;                 /*POUR MES 3 BLOCS FORFAITS.*/
+    height: 400px;
+    margin:7px;
+    background-color: #d4b051;
+    overflow: hidden;
+    /*box-sizing: border-box;*/
+
+}
+div.trois h3 {
+    font-family: 'Pacifico', cursive;
+    color:darkred;
+    text-align: center;
+}
+div.trois p {
+    font-family: 'Pacifico', cursive;
+    text-align: justify;
+    line-height: 20px;
+    width: 90%;
+    padding-left: 10%;
 }
 
 /*----------------------------------*POUR MON FORMULAIRE*---------------------------------------------------------- */
@@ -85,7 +125,7 @@ width: 250px;
 }
 
 label.long {
-    width: 5%;          /* POUR ESPACEMENT ENTRE NOM ET CASE*/
+    width: 10%;          /* POUR ESPACEMENT ENTRE NOM ET CASE*/
     display: inline-block;
 }
 
@@ -112,11 +152,11 @@ h1{
     background-color: white;
     padding: 10px 0;
 }
-ul,li {
-    color: white;
-    font-size:20px;
-    text-decoration: underline;
-}
+/*ul,li {*/
+    /*color: white;*/
+    /*font-size:20px;*/
+    /*text-decoration: underline;*/
+/*}*/
 h2 {
     margin-top: 10px;
     font-size: 20px;
