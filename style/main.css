@@ -1,126 +1,141 @@
-/*@import 'https://fonts.googleapis.com/css?family=Lobster';*/ /*P/E EN TROP ?*/
+/*@import 'https://fonts.googleapis.com/css?family=Lobster';*/
+/*P/E EN TROP ?*/
 @import 'https://fonts.googleapis.com/css?family=Lobster|Pacifico';
+@import 'https://fonts.googleapis.com/css?family=Baloo+Bhaina';
 
-* {         /*TOUCHE TOUT LE DOCUMENT=RESET*/
+* { /*TOUCHE TOUT LE DOCUMENT=RESET*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 #wrapper {
     margin: 0 auto;
     width: 80%;
 }
 
 nav {
-    text-align: right;      /*POUR METTRE LE MENU A DROITE*/
+    text-align: right; /*POUR METTRE LE MENU A DROITE*/
     position: relative;
     bottom: 90px;
 }
 
-nav  a {
+nav a {
     text-decoration: none;
     font-size: 125%;
     color: mediumvioletred;
-    display: inline-block;              /*CECI EST LE MENU*/
+    display: inline-block; /*CECI EST LE MENU*/
     width: 10%;
     box-sizing: border-box;
-    border-bottom: 2px solid lightgrey ;
+    border-bottom: 2px solid lightgrey;
     text-align: center;
 
 }
+
 a.active {
     color: purple;
-    border-bottom: 2px solid firebrick ;
+    border-bottom: 2px solid firebrick;
 
 }
 
-nav  a:hover {
+nav a:hover {
     color: mediumpurple;
 }
+
 header {
     margin-top: 20px;
 }
+
 header img {
     display: inline-block;
     border-radius: 150%;
     opacity: 0.7;
 }
+
 header p {
     font-family: 'Pacifico', cursive;
     display: inline-block;
     vertical-align: 80px;
     font-size: 300%;
     position: relative;
-    right:235px;
-    color:darkred;
+    right: 235px;
+    color: darkred;
 }
-footer  {
+
+footer {
     text-align: center
 }
+
 footer p {
     font-family: 'Pacifico', cursive;
-    width:100%;
+    width: 100%;
     border-top: 2px solid lightgrey;
     margin-top: 50px;
     font-size: 20px;
 }
+
 /*----------------------------- NE PAS TOUCHER LA PARTIE COMMUNE AU DESSUS ------------0k------------------------------ */
 #main img {
-    width: 100%;        /*MON IMAGE*/
+    width: 100%; /*MON IMAGE*/
     max-height: 500px;
 }
+
 .trois div {
     font-family: 'Pacifico', cursive;
     display: inline-block;
-    width: 32%;                 /*POUR MES 3 BLOCS FORFAITS.*/
+    width: 32%; /*POUR MES 3 BLOCS FORFAITS.*/
     height: 400px;
     margin: 7px;
     background-color: #d4b051;
     overflow: hidden;
     border-radius: 10%;
 }
+
 .trois h3 {
     text-align: center;
-    color:maroon;
+    color: maroon;
     font-size: 20px;
 }
+
 .trois p {
     text-align: justify;
     line-height: 20px;
-    padding:10px;
+    padding: 10px;
 }
 
 /*----------------------------------*POUR MON FORMULAIRE*---------------------------------------------------------- */
 fieldset {
     text-align: center;
-    border:4px solid #d4b051;
+    border: 4px solid #d4b051;
     background-color: #d7daa4;
     color: maroon;
 
 }
+
 form#content fieldset ul li {
-    list-style-type: none ;
+    list-style-type: none;
 }
+
 form p, form h2, fieldset ul li {
     padding: 10px;
 
-
 }
+
 .sub {
-    text-align: center;     /* BOUTON SUBMIT*/
+    text-align: center; /* BOUTON SUBMIT*/
     margin-top: 20px;
 }
 
 #soumettre {
-padding: 20px;
-border-radius: 90px;
-margin-top: 20px;
-background-color: white;
-width: 250px;
+    padding: 20px;
+    border-radius: 90px;
+    margin-top: 20px;
+    background-color: white;
+    width: 250px;
 }
 
 label.long {
-    width: 10%;          /* POUR ESPACEMENT ENTRE NOM ET CASE*/
+    width: 10%; /* POUR ESPACEMENT ENTRE NOM ET CASE*/
     display: inline-block;
 }
 
@@ -129,6 +144,7 @@ form h2 {
     /*font-family: 'Pacifico', cursive;*/
     color: maroon;
 }
+
 form p {
     font-family: 'Pacifico', cursive;
     font-size: 20px;
@@ -138,86 +154,104 @@ form p {
 #forfait_wrapper {
     margin: 0 auto;
     width: 80%;
-    background-color:white;
+    background-color: white;
+    color: maroon;
+    text-align: justify;
+    font-size: 25px;
+}
+
+#forfait_wrapper section > h1 > h2 > h3 > ul > table {
     color: maroon;
 }
-#forfait_wrapper>h1>h2>ul>table {
-    color: maroon;
-}
-#forfait_wrapper section,div.dc_prix {   /*----section gauche---*/
+
+#forfait_wrapper section, div.dc_prix { /*----section gauche---*/
     display: inline-block;
     width: 45%;
-    min-height:75px;
-    margin-top:10px;
-   }
+    min-height: 75px;
+}
 
-#forfait_wrapper h1,h2 {
-
+#forfait_wrapper h1, h2, h3 {
     text-decoration: underline;
-    margin-top: 10px;
-    padding: 10px 0;
+    text-align: left;
 }
-#forfait_wrapper ul>li {
 
-    font-size:30px;
+#forfait_wrapper ul > li {
+    margin-top: 20px;
+    font-size: 30px;
 }
-#forfait_wrapper ul.choix>li {
-    margin-left: 30px;
+
+#forfait_wrapper ul.choix > li {
+    margin-top: 10px;
     font-size: 20px;
     list-style-type: disc;
 }
-#forfait_wrapper table{
-    margin: 10px auto;
-    width: 100%;
-    height: 150px;
+
+#forfait_wrapper section table {
+    margin-bottom: 40px;
+    width: 95%;
+    border: 4px solid #d4b051;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 20px #80565c;
 }
 
-#forfait_wrapper table,th,tr,td {
-    border:4px solid #d4b051;
-    border-collapse: collapse;
-    padding: 0 20px;
-}
-#forfait_wrapper td:nth-last-of-type(1) {
-    text-align: center;
-}
 #forfait_wrapper tr:nth-of-type(1) {
-    background-color:maroon ;
-    font-family: 'Lobster', cursive;
+    background-color: maroon;
+    text-align: center;
+    font-family: 'Baloo Bhaina', cursive;
     font-size: 25px;
     color: white;
     text-decoration: underline;
-    text-align: center;
 }
 
-#forfait_wrapper tr:nth-child(4) {
+#forfait_wrapper tr:nth-child(2), tr:nth-child(5) {
     background-color: #d7daa4;
-    text-decoration: underline;
-}
-#forfait_wrapper p:nth-last-of-type(2),em {
-    display: inline-block;
-    margin: 10px 0;
-    font-family: 'Pacifico', cursive;
-    font-style: oblique;
+    font-family: 'Baloo Bhaina', cursive;
+    font-size: 20px;
 }
 
+#forfait_wrapper section > img {
+    width: 35%;
+    float: left;
+    margin: 30px;
+}
+
+#forfait_wrapper section p {
+    font-size: 20px;
+    width: 85%;
+
+}
 
 /*---------------------------------------section droit---------------------------------------------------------*/
 
-#forfait_wrapper aside{
+#forfait_wrapper aside {
     display: inline-block;
-    margin-top: 10px; width: 55%;
+    width: 55%;
     float: right;
-
     background-color: white;
+    font-size: 15px;
 
 }
-#forfait_wrapper img {
+
+#forfait_wrapper aside img {
     width: 300px;
     height: 190px;
+    float: left;
+    margin-top: 10px;
+    box-shadow: 0 5px 20px #80565c;
+    border: 4px solid maroon;
 }
 
 #forfait_wrapper figure {
-    display:inline-block;
+    display: inline-block;
     width: 45%;
+    height: 400px;
     padding: 10px;
 }
+
+#forfait_wrapper figure > figcaption {
+    font-size: 20px;
+    font-family: 'Baloo Bhaina', cursive;
+    padding-top: 20px;
+}
+
+
