@@ -215,7 +215,7 @@ form p {
     margin: 30px;
 }
 
-#forfait_wrapper section p {
+#forfait_wrapper>section>p {
     font-size: 20px;
     width: 85%;
 
@@ -223,35 +223,42 @@ form p {
 
 /*---------------------------------------section droit---------------------------------------------------------*/
 
-#forfait_wrapper aside {
-    display: inline-block;
-    width: 55%;
+#forfait_wrapper>aside {
+    display: block;
+    position: relative;
+    width: 54%;
+    margin-top: 60px;
     float: right;
-    background-color: white;
     font-size: 15px;
+    background-color:  #d7daa4;
+    -webkit-box-shadow: inset 0px 0px 19px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 19px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.75);
+    border-radius: 10px 10px 10px 10px;
 
 }
+/*#forfait_wrapper aside figure {*/
+    /*width: 25%;*/
+    /*height: 190px;*/
 
-#forfait_wrapper aside img {
-    width: 300px;
-    height: 190px;
-    float: left;
-    margin-top: 10px;
-    box-shadow: 0 5px 20px #80565c;
-    border: 4px solid maroon;
-}
+/*}*/
 
-#forfait_wrapper figure {
+#forfait_wrapper figure,h4 {
     display: inline-block;
     width: 45%;
-    height: 400px;
-    padding: 10px;
+    margin: 0 10px;
 }
-
-#forfait_wrapper figure > figcaption {
+#forfait_wrapper figure>figcaption {
     font-size: 20px;
     font-family: 'Baloo Bhaina', cursive;
-    padding-top: 20px;
+    padding-top: 10px;
 }
+#forfait_wrapper img {
+    width: 250px;
+    height: 190px;
+    margin: 10%;
+}
+
+
 
 
