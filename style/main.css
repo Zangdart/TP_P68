@@ -2,7 +2,7 @@
 /*P/E EN TROP ?*/
 @import 'https://fonts.googleapis.com/css?family=Lobster|Pacifico';
 @import 'https://fonts.googleapis.com/css?family=Baloo+Bhaina';
-
+@import 'https://fonts.googleapis.com/css?family=Arima+Madurai';
 * { /*TOUCHE TOUT LE DOCUMENT=RESET*/
     margin: 0;
     padding: 0;
@@ -157,30 +157,27 @@ form p {
     background-color: white;
     color: maroon;
     text-align: justify;
-    font-size: 25px;
-}
 
-#forfait_wrapper section > h1 > h2 > h3 > ul > table {
-    color: maroon;
 }
 
 #forfait_wrapper section, div.dc_prix { /*----section gauche---*/
     display: inline-block;
     width: 45%;
-    min-height: 75px;
+
 }
 
-#forfait_wrapper h1, h2, h3 {
+#forfait_wrapper h1, h2, h3 h4{
     text-decoration: underline;
     text-align: left;
+    color: maroon;
 }
 
-#forfait_wrapper ul > li {
+#forfait_wrapper ul>li {
     margin-top: 20px;
     font-size: 30px;
 }
 
-#forfait_wrapper ul.choix > li {
+#forfait_wrapper ul.choix>li {
     margin-top: 10px;
     font-size: 20px;
     list-style-type: disc;
@@ -189,6 +186,7 @@ form p {
 #forfait_wrapper section table {
     margin-bottom: 40px;
     width: 95%;
+    color: maroon;
     border: 4px solid #d4b051;
     border-collapse: collapse;
     box-shadow: 5px 5px 20px #80565c;
@@ -203,7 +201,7 @@ form p {
     text-decoration: underline;
 }
 
-#forfait_wrapper tr:nth-child(2), tr:nth-child(5) {
+#forfait_wrapper tr:nth-child(2),tr:nth-child(5) {
     background-color: #d7daa4;
     font-family: 'Baloo Bhaina', cursive;
     font-size: 20px;
@@ -212,10 +210,10 @@ form p {
 #forfait_wrapper section > img {
     width: 35%;
     float: left;
-    margin: 30px;
+    margin: 40px;
 }
 
-#forfait_wrapper>section>p {
+#forfait_wrapper section p {
     font-size: 20px;
     width: 85%;
 
@@ -227,10 +225,9 @@ form p {
     display: block;
     position: relative;
     width: 54%;
-    margin-top: 60px;
     float: right;
     font-size: 15px;
-    background-color:  #d7daa4;
+    background-color: #d7daa4;
     -webkit-box-shadow: inset 0px 0px 19px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px 0px 19px 1px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.75);
@@ -243,22 +240,49 @@ form p {
 
 /*}*/
 
-#forfait_wrapper figure,h4 {
+#forfait_wrapper figure {
     display: inline-block;
     width: 45%;
     margin: 0 10px;
 }
-#forfait_wrapper figure>figcaption {
+#forfait_wrapper figure figcaption {
     font-size: 20px;
     font-family: 'Baloo Bhaina', cursive;
     padding-top: 10px;
+    padding-left: 15px;
 }
-#forfait_wrapper img {
+#forfait_wrapper figure img {
     width: 250px;
     height: 190px;
     margin: 10%;
+    box-shadow: 0 0 19px 1px rgba(0,0,0,0.75);
 }
 
+/*---------------------- Deuxiem page APROPOS-------------------------*/
 
+#apropos_wrapper {
+    margin: 0 auto;
+    width: 80%;
+    background-color: white;
+    color: maroon;
+    text-align: justify;
+}
+.video_maccabane {
+    width: 300px;
+    margin: 0 45px;
+}
+#apropos_wrapper section {
+    background-color:  #d7daa4;
+    box-shadow: 0 0 15px 0 maroon;
+    border-radius: 15px;
+    padding: 20px 40px;
+}
+.video_maccabane section>h1>p {
+    font-family: 'Arima Madurai', cursive;
+}
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+}
 
 
