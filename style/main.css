@@ -151,81 +151,84 @@ form p {
 }
 
 /*----------------------------- NE PAS TOUCHER :PARTIE A DAVE ! ----------------------------------------------------- */
-#forfait_wrapper {
+
+#wrapper {
     margin: 0 auto;
     width: 80%;
+}
+#page_menu section {
+    margin: 0;
+    width: 40%;
     background-color: white;
     color: maroon;
     text-align: justify;
-
+}
+#page_menu section h2 {
+    padding: 20px;
 }
 
-#forfait_wrapper section, div.dc_prix { /*----section gauche---*/
-    display: inline-block;
-    width: 45%;
-
-}
-
-#forfait_wrapper h1, h2, h3 h4{
-    text-decoration: underline;
-    text-align: left;
-    color: maroon;
-}
-
-#forfait_wrapper ul>li {
+#menu ul>li { /* font li title*/
     margin-top: 20px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
-#forfait_wrapper ul.choix>li {
+#menu ul.choix li { /* font li chox menu*/
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 15px;
     list-style-type: disc;
 }
 
-#forfait_wrapper section table {
-    margin-bottom: 40px;
-    width: 95%;
+#prix table {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
     color: maroon;
     border: 4px solid #d4b051;
     border-collapse: collapse;
+    -moz-box-shadow: 5px 5px 20px #80565c;
+    -webkit-box-shadow: 5px 5px 20px #80565c;
+    -o-box-shadow: 5px 5px 20px #80565c;
     box-shadow: 5px 5px 20px #80565c;
 }
 
-#forfait_wrapper tr:nth-of-type(1) {
+#prix tr:nth-of-type(1) {
     background-color: maroon;
     text-align: center;
     font-family: 'Baloo Bhaina', cursive;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     text-decoration: underline;
 }
 
-#forfait_wrapper tr:nth-child(2),tr:nth-child(5) {
+#prix tr:nth-child(2),tr:nth-child(5) {
     background-color: #d7daa4;
     font-family: 'Baloo Bhaina', cursive;
-    font-size: 20px;
+    font-size: 15px;
 }
 
-#forfait_wrapper section > img {
+#prix img {
     width: 35%;
     float: left;
     margin: 40px;
 }
 
-#forfait_wrapper section p {
+#prix p {
+    margin: 0;
     font-size: 20px;
-    width: 85%;
+    width: 100%;
 
 }
 
 /*---------------------------------------section droit---------------------------------------------------------*/
 
-#forfait_wrapper>aside {
-    display: block;
-    position: relative;
-    width: 54%;
-    float: right;
+#activites {
+    width: 40%;
+    box-sizing: border-box;
+    /*float: right;*/
+    position: absolute;
+    top:30%;
+    right:10%;
+    color: maroon;
     font-size: 15px;
     background-color: #d7daa4;
     -webkit-box-shadow: inset 0px 0px 19px 1px rgba(0,0,0,0.75);
@@ -234,33 +237,52 @@ form p {
     border-radius: 10px 10px 10px 10px;
 
 }
-/*#forfait_wrapper aside figure {*/
+#activites h1{
+    text-align: center;
+
+}
+/*#page_menu aside figure {*/
     /*width: 25%;*/
     /*height: 190px;*/
 
 /*}*/
 
-#forfait_wrapper figure {
+#activites figure {
+    box-sizing: border-box;
     display: inline-block;
+    vertical-align: top;
     width: 45%;
-    margin: 0 10px;
 }
-#forfait_wrapper figure figcaption {
-    font-size: 20px;
+#activites figcaption {
+    font-size: 15px;
     font-family: 'Baloo Bhaina', cursive;
     padding-top: 10px;
-    padding-left: 15px;
+    margin-left: 20%;
+
 }
-#forfait_wrapper figure img {
-    width: 250px;
-    height: 190px;
-    margin: 10%;
+ img[alt*="activites"] {
+    width:150px;
+    height: 90px;
+    margin-left: 35%;
+     margin-top: 20px;
+
     box-shadow: 0 0 19px 1px rgba(0,0,0,0.75);
+    border: 2px solid grey;
+    -moz-border-radius: 800px;
+    -webkit-border-radius: 800px;
+    border-radius: 800px;
+    overflow: hidden;
 }
+img~p {
+    margin-left: 20%;
+    text-align:justify;
+}
+
 
 /*---------------------- Deuxiem page APROPOS-------------------------*/
 
 #apropos_wrapper {
+    position: relative;
     margin: 0 auto;
     width: 80%;
     background-color: white;
@@ -272,7 +294,11 @@ form p {
     margin: 0 45px;
 }
 #apropos_wrapper section {
+    position: relative;
+    left: 40%;
+    width: 50%;
     background-color:  #d7daa4;
+    -
     box-shadow: 0 0 15px 0 maroon;
     border-radius: 15px;
     padding: 20px 40px;
@@ -284,5 +310,6 @@ audio, canvas, progress, video {
     display: inline-block;
     vertical-align: baseline;
 }
+
 
 
