@@ -6,18 +6,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-image: url("../images/asanoha-400px.png");
+}
 #wrapper {
     margin: 0 auto;
     width: 80%;
+    border-radius: 5%;
+    /*background-color: white;*/
+
 }
 
 nav {
     text-align: right;      /*POUR METTRE LE MENU A DROITE*/
     position: relative;
-    bottom: 90px;
+    bottom: 100px;
 }
 
 nav  a {
+    font-family: 'Pacifico', cursive;
     text-decoration: none;
     font-size: 125%;
     color: mediumvioletred;
@@ -29,33 +36,38 @@ nav  a {
 
 }
 a.active {
-    color: purple;
+    color: #d4b051;
     border-bottom: 2px solid firebrick ;
 
 }
 
 nav  a:hover {
-    color: mediumpurple;
+    color: purple;
 }
 header {
     margin-top: 20px;
 }
 header img {
     display: inline-block;
-    border-radius: 150%;
+    border-radius: 50%;
+    /*background-position: 50%;*/
+    /*border-radius: 50%;*/
     opacity: 0.7;
+    width: 150px;
+    height:150px;
+    
 }
 header p {
     font-family: 'Pacifico', cursive;
     display: inline-block;
-    vertical-align: 80px;
-    font-size: 300%;
+    vertical-align: 60px;
+    font-size: 290%;
     position: relative;
-    right:235px;
-    color:darkred;
+    right:180px;
+    color:maroon;
 }
-footer  {
-    text-align: center
+footer img {
+    margin-top: 5%;
 }
 footer p {
     font-family: 'Pacifico', cursive;
@@ -63,26 +75,48 @@ footer p {
     border-top: 2px solid lightgrey;
     margin-top: 50px;
     font-size: 20px;
+    text-align: center
+
 }
+
 /*----------------------------- NE PAS TOUCHER LA PARTIE COMMUNE AU DESSUS ------------0k------------------------------ */
-#main img {
-    width: 100%;        /*MON IMAGE*/
-    max-height: 500px;
+#container img {
+    width: 900px;        /*MON IMAGE*/
+    height: 500px;
+}
+#annonce{
+    font-family: 'futura', cursive;
+    font-size: 150%;
+    background-color: #d4b051;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 50px;
+    margin-bottom: 50px;
+    color: maroon;
 }
 .trois div {
     font-family: 'Pacifico', cursive;
     display: inline-block;
     width: 32%;                 /*POUR MES 3 BLOCS FORFAITS.*/
-    height: 400px;
-    margin: 7px;
+    height: 550px;
+    margin: 30px 7px 30px;
     background-color: #d4b051;
     overflow: hidden;
-    border-radius: 10%;
+    border-radius: 10px;
+}
+.trois div img {
+    width: 100%;
+    height: 40%;
+    padding: 2%;
+    border-radius: 10px;
 }
 .trois h3 {
     text-align: center;
     color:maroon;
     font-size: 20px;
+    text-decoration: underline;
 }
 .trois p {
     text-align: justify;
@@ -91,11 +125,12 @@ footer p {
 }
 
 /*----------------------------------*POUR MON FORMULAIRE*---------------------------------------------------------- */
-fieldset {
+#identite {
     text-align: center;
     border:4px solid #d4b051;
     background-color: #d7daa4;
     color: maroon;
+    border-radius: 10px;
 
 }
 form#content fieldset ul li {
@@ -126,12 +161,75 @@ label.long {
 
 form h2 {
     text-decoration: none;
-    /*font-family: 'Pacifico', cursive;*/
+    font-family: 'futura', cursive;
     color: maroon;
 }
 form p {
     font-family: 'Pacifico', cursive;
     font-size: 20px;
+}
+/*-----------------------------------------------------SLIDER---------------------------------------------------------*/
+
+
+#slider {
+    position: relative;    /* le parent positionné */
+    width: 900px;          /* Largeur des images (1 élément du slideshow) */
+    height: 500px;         /* Hauteur des images  */
+    overflow: hidden;      /* on "clipe" les images dans le conteneur */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+
+/*Le ul qui contient les images */
+#sContent {
+    position: absolute; /* on sort l'élément du flux */
+    top: 0;             /* on le positionne précisément dans... */
+    left: 0;			/* l'angle haut gauche de son parent positionné */
+    margin: 0;
+    padding: 0;
+    width: calc(900px * 5);          /* (car 5 images) */
+    /*
+     * Mise en place d'une transition CSS sur la propriété  left
+     * pour un défilement horizontal plus fluide
+     */
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    -webkit-transition: left 2s;
+    transition: left 2s;
+}
+/* Pour mettre les éléments li côte à côte */
+#sContent li {
+    display: inline;
+}
+
+/* Les flèches gauche et droite */
+#slider a {
+    width:77px; /*Il faut dimensionner le a à la taille de l'image de flèche*/
+    height:77px;
+    position:absolute;
+    top:calc(50% - 35px);
+    background-image: url('arrows.png');
+    z-index: +1;
+    /* Opacité pour effet au survol */
+    opacity:0.2; /* Opacité par défaut */
+    transition: opacity 0.3s;
+}
+
+#slider a:hover {
+    opacity:1;
+}
+
+#slider a#prev {
+    left: 15px;
+    background-position: 0 0; /* Extraire la bonne image dans le fichier des flèches */
+}
+
+#slider a#next {
+    right: 15px;
+    background-position: 77px 0;
 }
 
 /*----------------------------- NE PAS TOUCHER :PARTIE A DAVE ! ----------------------------------------------------- */
@@ -221,3 +319,9 @@ form p {
     width: 45%;
     padding: 10px;
 }
+
+
+/*----------------------------------------------------FIN---------------------------------------------------------*/
+
+
+
