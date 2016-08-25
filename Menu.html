@@ -5,9 +5,11 @@
     <title>Forfait</title>
     <link rel="stylesheet" href="style/main.css"/>
     <link rel="icon" href="images/favicon.ico"/>
+    <script src="script/jquery-ui.min.js"></script>
+    <script src="script/main.js"></script>
 </head>
-<body>
-<div id="forfait_wrapper">
+<body id="page_menu">
+<div id="wrapper">
     <header>
         <img src="images/téléchargement.jpg"/>
         <p>McCabane</p>
@@ -51,7 +53,7 @@
             </ul>
         </div>
         <h2>PRIX</h2>
-        <div>
+        <div id="prix">
             <table>
                 <tr>
                     <td>TARIFS</td>
@@ -85,49 +87,47 @@
                 </tr>
             </table>
         </div>
-        <p>*** Taxes et pourboire en sus ***</p>
+        <p><strong>*** Taxes et pourboire en sus ***</strong></p>
         <p><em>10 % de rabais </em> applicable pour les groupes de 7 personnes et plus <em>(une seule facture)</em></p>
-        <img src="images/association.jpg" alt="aporte_votre_vin"/><br>
         <p><strong>Des recettes de grand-maman au goût d’aujourd’hui, cuisinées sous vos yeux!</strong>Venez revivre la tradition des cabanes à sucre d’autrefois en savourant un copieux repas des sucres raffiné. Promenez-vous dans les sentiers de l’érablière avec chaudières et chalumeaux ou baladez-vous en traîneau tiré par nos chevaux de race belge. Venez passer, en groupe ou en famille, des moments inoubliables à la cabane à sucre <mark>«McCabane».</mark></p>
+        <img src="images/association.jpg" alt="aporte_votre_vin"/>
     </section>
-    <aside>
+    <aside id="activites">
+        <h2>Activités à la cabane à sucre</h2>
         <figure>
-            <h1>Activités à la cabane à sucre</h1>
-            <img src="images/repas_3.jpg" alt="salle_a_manger"/><figcaption>**Salle à Manger</figcaption>
+            <img src="images/repas_3.jpg" alt="activites"/><figcaption>**Salle à Manger</figcaption>
             <p>Recettes du temps des sucres du bon vieux temps dont la préparation et la cuisson sont faites à notre cabane à sucre.</p>
-        </figure>
-        <figure>
-            <img src="images/repas.jpg" alt="dessert"/><figcaption>**Menu McCabane</figcaption>
+        </figure><figure>
+            <img src="images/repas.jpg" alt="activites"/><figcaption>**Menu McCabane</figcaption>
             <p>Nous vous invite à déguster un repas aux saveurs d’autrefois et à redécouvrir le plaisir de la tradition. Du sirop d'érable est servi avec tous nos plats.</p>
         </figure>
         <figure>
-            <img src="images/divertissement%20.jpg" alt="devertion"/><figcaption>**Le Village des enfants.</figcaption>
+            <img src="images/divertissement%20.jpg" alt="activites"/><figcaption>**Le Village des enfants.</figcaption>
             <p>Les enfants ne sont pas oubliés chez-nous. Tout ce qu'il faut pour faire de la fête d'anniversaire de votre enfant un moment qu'il n'oubliera jamais.</p>
         </figure>
         <figure>
-            <img src="images/tire_2.jpg" alt="la_tire"/><figcaption>**La tire d'érable.</figcaption>
+            <img src="images/tire_2.jpg" alt="activites"/><figcaption>**La tire d'érable.</figcaption>
             <p>Vient de la sève des arbres. La sève à un goût peu sucré mais lorsqu'on la fait bouillir on obtient de la tire voilà l'utilité de la salle d'évaporation.</p>
         </figure>
         <figure>
-            <img src="images/cheval.jpg" alt="cheval"/><figcaption>**Les promenades en cheval.</figcaption>
+            <img src="images/cheval.jpg" alt="activites"/><figcaption>**Les promenades en cheval.</figcaption>
             <p>Une marche dans les sentiers boisés vous permettra de croiser sur votre chemin la cabane d'antan et, bien sûr, l'eau d'érable en chaudières.</p>
         </figure>
         <figure>
-            <img src="images/animaux.jpg" alt="la_ferme"/><figcaption>**Animaux de la ferme.</figcaption>
+            <img src="images/animaux.jpg" alt="activites"/><figcaption>**Animaux de la ferme.</figcaption>
             <p>Visite de la ferme. Plusieurs animaux de la ferme sont sur place; poneys, poules, chèvre et plus encore...</p>
         </figure>
         <figure>
-            <img src="images/produit_2.jpg" alt="boutique"/><figcaption>**Boutique "La Petite Cabane".</figcaption>
+            <img src="images/produit_2.jpg" alt="activites"/><figcaption>**Boutique "La Petite Cabane".</figcaption>
             <p>La Petite Cabane à Sucre déploie une gamme infinie de produits d’érable, offre la dégustation de ceux-ci en tout temps..!</p>
         </figure>
         <figure>
-            <img src="images/produit_3.jpg" alt="sucre"/><figcaption>**Les Glaces du Château.</figcaption>
+            <img src="images/produit_3.jpg" alt="activites"/><figcaption>**Les Glaces du Château.</figcaption>
             <p> Venez vous rafraîchir et déguster une glace dans l’hôtel le plus photographié du monde ou couronner le tout de notre fameux sundae au beurre d’érable!</p>
         </figure>
     </aside>
-
     <footer>
-        <a href="#menu_principal"><img src="images/hdp1.jpg"/></a>
+        <a href="#menu_principal"><img src="images/hdp3.jpg"/></a>
         <p> McCabane, la meilleure cabane à sucre au Québec, tous droits réservés ©</p>
     </footer>
 </div>
