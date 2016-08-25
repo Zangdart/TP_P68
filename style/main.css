@@ -14,9 +14,6 @@ body {
 #wrapper {
     margin: 0 auto;
     width: 80%;
-    border-radius: 5%;
-    /*background-color: white;*/
-
 }
 
 nav {
@@ -260,6 +257,15 @@ textarea {
     margin: 0 auto;
     width: 80%;
 }
+
+#page_menu h1,h2{
+    margin-top: 10px;
+    font-family: 'Arima Madurai', cursive;
+    text-decoration: underline;
+    text-shadow: 2px 1px #80565c;
+
+}
+
 #page_menu section {
     margin: 0;
     width: 40%;
@@ -267,13 +273,11 @@ textarea {
     color: maroon;
     text-align: justify;
 }
-#page_menu section h2 {
-    padding: 20px;
-}
 
 #menu ul>li { /* font li title*/
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 25px;
+
 }
 
 #menu ul.choix li { /* font li chox menu*/
@@ -298,10 +302,11 @@ textarea {
 #prix tr:nth-of-type(1) {
     background-color: maroon;
     text-align: center;
-    font-family: 'Baloo Bhaina', cursive;
+    font-family: 'Arima Madurai', cursive;
     font-size: 20px;
     color: white;
     text-decoration: underline;
+    text-shadow: 2px 1px #80565c;
 }
 
 #prix tr:nth-child(2),tr:nth-child(5) {
@@ -310,46 +315,38 @@ textarea {
     font-size: 15px;
 }
 
-#prix img {
+#wrapper section>p {
+    padding: 10px;
+    font-size: 20px;
+}
+
+#wrapper section>img {
     width: 35%;
     float: left;
     margin: 40px;
 }
 
-#prix p {
-    margin: 0;
-    font-size: 20px;
-    width: 100%;
-
-}
-
 /*---------------------------------------section droit---------------------------------------------------------*/
 
-#activites {
-    width: 40%;
+#activites,#apropos {
+    width: 50%;
     box-sizing: border-box;
-    /*float: right;*/
     position: absolute;
-    top:30%;
-    right:10%;
+    top: 250px;
+    left: 50%;
     color: maroon;
     font-size: 15px;
     background-color: #d7daa4;
-    -webkit-box-shadow: inset 0px 0px 19px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0px 0px 19px 1px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset 0 0 19px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0 0 19px 1px rgba(0,0,0,0.75);
+    box-shadow: 0 0 19px 1px rgba(0,0,0,0.75);
     border-radius: 10px 10px 10px 10px;
 
 }
-#activites h1{
+
+#activites>h2 {
     text-align: center;
-
 }
-/*#page_menu aside figure {*/
-    /*width: 25%;*/
-    /*height: 190px;*/
-
-/*}*/
 
 #activites figure {
     box-sizing: border-box;
@@ -357,35 +354,37 @@ textarea {
     vertical-align: top;
     width: 45%;
 }
+
 #activites figcaption {
     font-size: 15px;
     font-family: 'Baloo Bhaina', cursive;
-    padding-top: 10px;
+    padding-top: 5px;
     margin-left: 20%;
-
 }
+
  img[alt*="activites"] {
-    width:150px;
-    height: 90px;
-    margin-left: 35%;
-     margin-top: 20px;
+     width: 150px;
+     height: 90px;
+     margin-left: 35%;
+     margin-top: 10px;
+     box-shadow: 0 0 19px 1px rgba(0, 0, 0, 0.75);
+     border: 2px solid grey;
+     -moz-border-radius: 800px;
+     -webkit-border-radius: 800px;
+     border-radius: 800px;
+     overflow: hidden;
+ }
 
-    box-shadow: 0 0 19px 1px rgba(0,0,0,0.75);
-    border: 2px solid grey;
-    -moz-border-radius: 800px;
-    -webkit-border-radius: 800px;
-    border-radius: 800px;
-    overflow: hidden;
-}
-img~p {
+#activites p {
     margin-left: 20%;
+    margin-bottom: 10%;
     text-align:justify;
 }
 
 
-/*---------------------- Deuxiem page APROPOS-------------------------*/
+/*---------Dervys------------- Deuxiem page APROPOS-------------------------*/
 
-#apropos_wrapper {
+#wrapper  {
     position: relative;
     margin: 0 auto;
     width: 80%;
@@ -393,25 +392,41 @@ img~p {
     color: maroon;
     text-align: justify;
 }
+
 .video_maccabane {
-    width: 300px;
-    margin: 0 45px;
-}
-#apropos_wrapper section {
-    position: relative;
-    left: 40%;
-    width: 50%;
-    background-color:  #d7daa4;
-    box-shadow: 0 0 15px 0 maroon;
-    border-radius: 15px;
-    padding: 20px 40px;
+    width: 40%;
+    margin: 45px;
 }
 
-.video_maccabane section>h1>p {
-    font-family: 'Arima Madurai', cursive;
+.video_maccabane>video {
+   margin-top: 10%;
+    padding: 20px;
+    -webkit-box-shadow: inset 0 0 19px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0 0 19px 1px rgba(0,0,0,0.75);
+    box-shadow: 0 0 19px 1px rgba(0,0,0,0.75);
+    border-radius: 10px 10px 10px 10px;
+
 }
 
-audio, canvas, progress, video {
-    display: inline-block;
-    vertical-align: baseline;
+.video_maccabane>h1 {
+    left: 10%;
+    width: 100%;
+    text-align: left;
+
 }
+
+
+#apropos h2 {
+    text-align: center;
+}
+#apropos>p {
+    margin: 0 20px;
+    text-align: justify;
+}
+
+
+
+
+
+
+
