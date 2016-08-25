@@ -54,6 +54,10 @@
                     <input type="text" id="adr" placeholder="Adresse" required="required" pattern="{2,}"  />
                 </li>
                 <li>
+                    <label class="long" for="res">Réservation</label>
+                    <input type="number" id="res" placeholder="Max de 30 personnes"  required="required" max="30"  />
+                </li>
+                <li>
                     Votre Pays d'origine: <br>
                     <input list="pays" name="pays" required="required">
                     <datalist id="pays">
@@ -61,6 +65,8 @@
                         <option value="France">France</option>
                         <option value="Japon">Japon</option>
                         <option value="Finlande">Finlande</option>
+                        <option value="Cuba">Cuba</option>
+                        <option value="Autre">Autre</option>
                     </datalist>
                 </li>
                 <li>
@@ -71,6 +77,7 @@
                         <option value="Sirop d'erable a la Pancake"></option>
                         <option value="Hydromel saveur erable"></option>
                         <option value="Tire a l'erable"></option>
+                        <option value="Autre"></option>
                     </datalist>
                 </li>
 
@@ -81,9 +88,14 @@
                     <input type="radio" name="gender" value="female">Femme<br>
                     <input type="radio" name="gender" value="other"> Autre
                 </li>
+
                 <li>
                     <input type="checkbox" id="autorisation" />
                     <label for="autorisation">Cochez pour vous inscrire a l'infolettre ! </label>
+                </li>
+
+                <li>
+                    <textarea rows="7" cols="40" name="comment" form="content">Entrez votre commentaire ici...</textarea>
                 </li>
             </ul>
 
