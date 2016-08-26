@@ -6,6 +6,7 @@
     <link href="style/main.css" rel="stylesheet"/>
     <link rel="icon" href="images/favicon.ico"/>
     <script src="script/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="script/main.js"></script>
 </head>
 <body>
@@ -13,6 +14,17 @@
     <header>
         <img src="images/téléchargement.jpg"/>
         <p>McCabane</p>
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html" >Accueil</a><!--
+     --><a href="menu.html">Menu</a><!--
+     --><a href="apropos.html" class="active">A Propos</a><!--
+     --><a href="formulaire.html">Contact</a>
+            </div>
+        </div>
+
         <nav id="menu_principal">
             <a href="index.html">Accueil</a><!--
      --><a href="menu.html">Menu</a><!--
@@ -21,36 +33,29 @@
         </nav>
     </header><!--menu index-->
     <div class="video_maccabane">
-        <h1>On parle de la cabane à sucre <strong>MacCabane</strong></h1>
+        <h1>Galerie d`images et video **..McCabane..**</h1>
         <video controls="controls" width="400px" height="300px">
             <source src="video/maccabane.mp4" type="video/mp4">
             <source src="video/maccabane.webm" type="video/webm">
             <source src="video/maccabane.ogg" type="video/ogg">
             Pas de support de video HTML5 dans ce navigateur !
         </video>
-        <p class="signature">Le temps des sucres</p>
     </div>
-    <div id="slider">
-        <h1>Galerie de photo</h1>
-        <ul class="slider">
-            <li><img src="images/divertissement_2.jpg" /></li>
+    <div id="conten">
+        <h2><a href="Menu.html">Retour au <strong>MENU ET PRIX</strong></a></h2>
+        <ul class="gallery">
+            <li><img src="images/repas-cabane-a-sucre.jpg" /></li>
+            <li><img src="images/cheval.jpg"/></li>
+            <li><img src="images/tire%20(2).jpg" /></li>
+            <li><img src="images/chiens.jpg" /></li>
             <li><img src="images/miusq.jpg" /></li>
-            <li><img src="images/cheval.jpg" /></li>
-            <li><img src="images/tire_2.jpg" /></li>
-            <li><img src="images/repas_3.jpg" /></li>
-            <li><img src="images/images%20(1).jpg" /></li>
         </ul>
     </div>
     <section id="apropos">
         <h2>À PROPOS</h2>
         <p>La famille McCabane œuvre depuis plus de 70 ans, dans le domaine de la restauration. Au fil des ans, nous nous sommes démarqué avec notre accueil chaleureux, notre service impeccable et la grande qualité de la nourriture que nous servons. À travers ce site, vous découvrirez l’origine de notre entreprise, l’évolution de celle-ci et bien attendu, la variété de nos services énumérés ici-bas : Cabane à sucre, Salle de réception et Les Produits d’Antan.</p>
-        <p>Venez vivre l’expérience de la Cabane à sucre traditionnelle, avec un repas typique et des activités variées, pour tous les membres de la famille : randonnée pédestre, balade de chevaux, mini-ferme, jeux gonflables, musée de poupée, théâtre de marionnette, etc.</p>
-            <p>Huit salles sont à votre disposition pour faire des réceptions de tout genre : mariage, anniversaire et autres. Vous serez charmé par le décor champêtre des salles et l’accueil exceptionnel de nos organisateurs d’événements.</p>
-            <p>Pour la période des fêtes, diverses activités sont élaborées afin de vous faire vivre l’expérience festive chez <mark>McCabane.</mark> Que ce soit pour les familles ou les entreprises, chacun y passera un moment formidable.</p>
-            <p>Durant toute l’année, vous avez accès à une boutique où vous trouverez des repas préparés sur place (les produits d’Antan) et des produits dérivés de l’érable. N’hésitez pas à nous rendre visite. Vous pouvez egalement faire vos achats en ligne !</p>
-            <p>Que ce soit par simple curiosité, un renseignement, une réservation ou pour commander des produits maison, depuis quatre générations, c’est toujours un plaisir de vous servir et de vous recevoir chez nous !</p>
+        <p>Que ce soit par simple curiosité, un renseignement, une réservation ou pour commander des produits maison, depuis quatre générations, c’est toujours un plaisir de vous servir et de vous recevoir chez nous !</p>
         <p><strong>Nous vous souhaitons une bonne visite</strong>.</p>
-        <p>La Cabane à sucre <mark>McCabane</mark></p>
     </section>
 
     <footer>

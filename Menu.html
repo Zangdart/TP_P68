@@ -5,7 +5,7 @@
     <title>Forfait</title>
     <link rel="stylesheet" href="style/main.css"/>
     <link rel="icon" href="images/favicon.ico"/>
-    <script src="script/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="script/main.js"></script>
 </head>
 <body id="page_menu">
@@ -13,6 +13,17 @@
     <header>
         <img src="images/téléchargement.jpg"/>
         <p>McCabane</p>
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html" >Accueil</a><!--
+     --><a href="menu.html" class="active">Menu</a><!--
+     --><a href="apropos.html">A Propos</a><!--
+     --><a href="formulaire.html">Contact</a>
+            </div>
+        </div>
+
         <nav id="menu_principal">
             <a href="index.html">Accueil</a><!--
      --><a href="Menu.html" class="active">Menu</a><!--
@@ -20,9 +31,9 @@
      --><a href="formulaire.html">Contact</a>
         </nav>
     </header><!--menu index-->
-    <section>
-        <div id="menu">
-            <h1>MENU DU TEMS DE SUCRE</h1>
+    <section class="menu">
+        <div id="menu" class="menu">
+            <h1>MENU DU TEMPS DES SUCRES</h1>
             <ul>
                 <li>Les Entres.
                     <ul class="choix">
@@ -87,10 +98,10 @@
                 </tr>
             </table>
         </div>
-        <p><strong>*** Taxes et pourboire en sus ***</strong></p>
-        <p><em>10 % de rabais </em> applicable pour les groupes de 7 personnes et plus <em>(une seule facture)</em></p>
-        <p><strong>Des recettes de grand-maman au goût d’aujourd’hui, cuisinées sous vos yeux!</strong>Venez revivre la tradition des cabanes à sucre d’autrefois en savourant un copieux repas des sucres raffiné. Promenez-vous dans les sentiers de l’érablière avec chaudières et chalumeaux ou baladez-vous en traîneau tiré par nos chevaux de race belge. Venez passer, en groupe ou en famille, des moments inoubliables à la cabane à sucre <mark>«McCabane».</mark></p>
-        <img src="images/association.jpg" alt="aporte_votre_vin"/>
+        <p class="menu"><strong>*** Taxes et pourboire en sus ***</strong></p>
+        <p class="menu"><em>10 % de rabais </em> applicable pour les groupes de 7 personnes et plus <em>(une seule facture)</em></p>
+        <p class="menu"><strong>Des recettes de grand-maman au goût d’aujourd’hui, cuisinées sous vos yeux!</strong>Venez revivre la tradition des cabanes à sucre d’autrefois en savourant un copieux repas des sucres raffiné. Promenez-vous dans les sentiers de l’érablière avec chaudières et chalumeaux ou baladez-vous en traîneau tiré par nos chevaux de race belge. Venez passer, en groupe ou en famille, des moments inoubliables à la cabane à sucre <mark>«McCabane».</mark></p>
+        <img src="images/association.jpg" alt="aporte_votre_vin" class="menu"/>
     </section>
     <aside id="activites">
         <h2>Activités à la cabane à sucre</h2>
@@ -98,9 +109,9 @@
             <img src="images/repas_3.jpg" alt="activites"/><figcaption>**Salle à Manger</figcaption>
             <p>Recettes du temps des sucres du bon vieux temps dont la préparation et la cuisson sont faites à notre cabane à sucre.</p>
         </figure><figure>
-            <img src="images/repas.jpg" alt="activites"/><figcaption>**Menu McCabane</figcaption>
-            <p>Nous vous invite à déguster un repas aux saveurs d’autrefois et à redécouvrir le plaisir de la tradition. Du sirop d'érable est servi avec tous nos plats.</p>
-        </figure>
+        <img src="images/repas.jpg" alt="activites"/><figcaption>**Menu McCabane</figcaption>
+        <p>Nous vous invite à déguster un repas aux saveurs d’autrefois et à redécouvrir le plaisir de la tradition. Du sirop d'érable est servi avec tous nos plats.</p>
+    </figure>
         <figure>
             <img src="images/divertissement%20.jpg" alt="activites"/><figcaption>**Le Village des enfants.</figcaption>
             <p>Les enfants ne sont pas oubliés chez-nous. Tout ce qu'il faut pour faire de la fête d'anniversaire de votre enfant un moment qu'il n'oubliera jamais.</p>
@@ -116,11 +127,11 @@
         <figure>
             <img src="images/animaux.jpg" alt="activites"/><figcaption>**Animaux de la ferme.</figcaption>
             <p>Visite de la ferme. Plusieurs animaux de la ferme sont sur place; poneys, poules, chèvre et plus encore...</p>
-        </figure>
-        <figure>
-            <img src="images/produit_2.jpg" alt="activites"/><figcaption>**Boutique "La Petite Cabane".</figcaption>
-            <p>La Petite Cabane à Sucre déploie une gamme infinie de produits d’érable, offre la dégustation de ceux-ci en tout temps..!</p>
-        </figure>
+        </figure><!--
+        --><figure>
+        <img src="images/produit_2.jpg" alt="activites"/><figcaption>**Boutique "La Petite Cabane".</figcaption>
+        <p>La Petite Cabane à Sucre déploie une gamme infinie de produits d’érable, offre la dégustation de ceux-ci en tout temps..!</p>
+    </figure>
         <figure>
             <img src="images/produit_3.jpg" alt="activites"/><figcaption>**Les Glaces du Château.</figcaption>
             <p> Venez vous rafraîchir et déguster une glace dans l’hôtel le plus photographié du monde ou couronner le tout de notre fameux sundae au beurre d’érable!</p>
